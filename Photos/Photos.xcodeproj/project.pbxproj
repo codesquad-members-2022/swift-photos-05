@@ -10,6 +10,7 @@
 		8D6186E927E869A700090B8A /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6186E827E869A700090B8A /* RGB.swift */; };
 		D0DB557C27E821B8002F8330 /* PhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB557B27E821B8002F8330 /* PhotosTests.swift */; };
 		D0DB558327E86D58002F8330 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558227E86D58002F8330 /* UIColor+Extension.swift */; };
+		D0DB558627E86F42002F8330 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558527E86F42002F8330 /* ColorCollectionViewCell.swift */; };
 		D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4027E81CE600983F5E /* AppDelegate.swift */; };
 		D0EB3F4327E81CE600983F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4227E81CE600983F5E /* SceneDelegate.swift */; };
 		D0EB3F4527E81CE600983F5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4427E81CE600983F5E /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		D0DB557927E821B8002F8330 /* PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DB557B27E821B8002F8330 /* PhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTests.swift; sourceTree = "<group>"; };
 		D0DB558227E86D58002F8330 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D0DB558527E86F42002F8330 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		D0EB3F3D27E81CE600983F5E /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EB3F4027E81CE600983F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0EB3F4227E81CE600983F5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = PhotosTests;
 			sourceTree = "<group>";
 		};
+		D0DB558427E86F13002F8330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0DB558527E86F42002F8330 /* ColorCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D0EB3F3427E81CE600983F5E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		D0EB3F3F27E81CE600983F5E /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				D0DB558427E86F13002F8330 /* View */,
 				D0EB3F4427E81CE600983F5E /* ViewController.swift */,
 				8D6186E827E869A700090B8A /* RGB.swift */,
 				D0EB3F4627E81CE600983F5E /* Main.storyboard */,
@@ -220,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DB558627E86F42002F8330 /* ColorCollectionViewCell.swift in Sources */,
 				D0EB3F4527E81CE600983F5E /* ViewController.swift in Sources */,
 				8D6186E927E869A700090B8A /* RGB.swift in Sources */,
 				D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */,
