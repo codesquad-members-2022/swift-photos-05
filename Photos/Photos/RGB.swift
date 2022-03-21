@@ -20,4 +20,13 @@ class RGB {
         self.green = green < minValue ? minValue : (green > maxValue ? maxValue : green)
         self.blue = blue < minValue ? minValue : (blue > maxValue ? maxValue : blue)
     }
+    
+    /// 랜덤 색상 생성
+    /// - Returns: RGB
+    static func generateRandomColor() -> RGB {
+        let red = Int.random(in: 0...255)
+        let green = Int.random(in: 0...255)
+        let blue = Int.random(in: 0...255)
+        return RGB(red: red, green: green, blue: blue)
+    }
 }
