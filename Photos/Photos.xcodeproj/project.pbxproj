@@ -57,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0E7C8827E824F800DC267C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB3F4027E81CE600983F5E /* AppDelegate.swift */,
+				D0EB3F4227E81CE600983F5E /* SceneDelegate.swift */,
+				D0EB3F4927E81CE700983F5E /* Assets.xcassets */,
+				D0EB3F4B27E81CE700983F5E /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		D0DB557A27E821B8002F8330 /* PhotosTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +97,9 @@
 		D0EB3F3F27E81CE600983F5E /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				D0EB3F4027E81CE600983F5E /* AppDelegate.swift */,
-				D0EB3F4227E81CE600983F5E /* SceneDelegate.swift */,
 				D0EB3F4427E81CE600983F5E /* ViewController.swift */,
 				D0EB3F4627E81CE600983F5E /* Main.storyboard */,
-				D0EB3F4927E81CE700983F5E /* Assets.xcassets */,
-				D0EB3F4B27E81CE700983F5E /* LaunchScreen.storyboard */,
+				8D0E7C8827E824F800DC267C /* SupportingFiles */,
 				D0EB3F4E27E81CE700983F5E /* Info.plist */,
 			);
 			path = Photos;
