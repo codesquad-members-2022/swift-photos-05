@@ -11,6 +11,7 @@
 		D0DB557C27E821B8002F8330 /* PhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB557B27E821B8002F8330 /* PhotosTests.swift */; };
 		D0DB558327E86D58002F8330 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558227E86D58002F8330 /* UIColor+Extension.swift */; };
 		D0DB558627E86F42002F8330 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558527E86F42002F8330 /* ColorCollectionViewCell.swift */; };
+		D0DB558727E874D9002F8330 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6186E827E869A700090B8A /* RGB.swift */; };
 		D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4027E81CE600983F5E /* AppDelegate.swift */; };
 		D0EB3F4327E81CE600983F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4227E81CE600983F5E /* SceneDelegate.swift */; };
 		D0EB3F4527E81CE600983F5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4427E81CE600983F5E /* ViewController.swift */; };
@@ -224,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DB557C27E821B8002F8330 /* PhotosTests.swift in Sources */,
+				D0DB558727E874D9002F8330 /* RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

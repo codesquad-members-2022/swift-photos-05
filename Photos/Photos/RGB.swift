@@ -30,3 +30,10 @@ class RGB {
         return RGB(red: red, green: green, blue: blue)
     }
 }
+
+
+extension RGB: Equatable {
+    static func == (lhs: RGB, rhs: RGB) -> Bool {
+        return lhs.red == rhs.red && lhs.green == rhs.green && lhs.blue == rhs.blue
+    }
+}
