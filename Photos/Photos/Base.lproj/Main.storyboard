@@ -50,6 +50,9 @@
                             <constraint firstItem="GVI-D9-NQO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xQZ-cH-ekC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="GVI-D9-NQO" id="oPs-U4-cCv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
