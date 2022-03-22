@@ -27,6 +27,9 @@ final class ViewController: UIViewController {
         
         collectionView.reloadData() // 화면 전환할 때마다 데이터 reload
     }
+    
+//    private func
+    
 }
 
 
@@ -47,6 +50,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         
         // asset의 고유 식별자를 cell의 식별자에 주입
         cell.representedIdentifier = asset?.localIdentifier
+        
+        //이미지 캐싱.
+        let cachingPhotos = self.allPhotos!.objects(at: IndexSet(integersIn: 0..<allPhotos!.count))
+        cacheManager.startCachingImages(for: cachingPhotos, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFill, options: nil)
         
         // 이미지 불러오기
         imageManger.requestImage(for: asset!, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFill, options: nil, resultHandler: {
