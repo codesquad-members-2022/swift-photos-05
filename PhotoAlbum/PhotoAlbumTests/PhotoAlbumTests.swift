@@ -1,13 +1,13 @@
 //
-//  PhotosTests.swift
-//  PhotosTests
+//  PhotoAlbumTests.swift
+//  PhotoAlbumTests
 //
 //  Created by 안상희 on 2022/03/21.
 //
 
 import XCTest
 
-class PhotosTests: XCTestCase {
+class PhotoAlbumTests: XCTestCase {
     var sut: RGB!
     
     override func setUpWithError() throws {
