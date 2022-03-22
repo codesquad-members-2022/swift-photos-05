@@ -22,11 +22,13 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
+        let cellCount:Int = 40
+        return cellCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ColorCollectionViewCell else {
+        let cell = "colorCell"
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cell , for: indexPath) as? ColorCollectionViewCell else {
             return UICollectionViewCell()
         }
         return cell
