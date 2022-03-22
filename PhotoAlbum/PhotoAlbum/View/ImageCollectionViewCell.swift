@@ -8,6 +8,8 @@
 import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
+    var representedIdentifier: String?
+    
     @IBOutlet weak var imageView: UIImageView!
     
     required init?(coder: NSCoder) {
