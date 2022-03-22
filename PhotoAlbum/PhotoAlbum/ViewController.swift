@@ -8,10 +8,10 @@
 import Photos
 import UIKit
 
-class ViewController: UIViewController {
-    var allPhotos: PHFetchResult<PHAsset>? // 가져올 asset
-    let cacheManager = PHCachingImageManager()
-    let imageManger = PHImageManager()
+final class ViewController: UIViewController {
+    private var allPhotos: PHFetchResult<PHAsset>? // 가져올 asset
+    private let cacheManager = PHCachingImageManager()
+    private let imageManger = PHImageManager()
     
     
     @IBOutlet weak var collectionView: UICollectionView!

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
+final class ImageCollectionViewCell: UICollectionViewCell {
     var representedIdentifier: String?
     
     @IBOutlet weak var imageView: UIImageView!
