@@ -103,6 +103,14 @@
 			path = PhotosUITests;
 			sourceTree = "<group>";
 		};
+		8DA591FC27E96DAF00CC739C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0DB558227E86D58002F8330 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D0DB557A27E821B8002F8330 /* PhotosTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +150,13 @@
 		D0EB3F3F27E81CE600983F5E /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				D0DB558427E86F13002F8330 /* View */,
 				D0EB3F4427E81CE600983F5E /* ViewController.swift */,
 				8D6186E827E869A700090B8A /* RGB.swift */,
 				D0EB3F4627E81CE600983F5E /* Main.storyboard */,
+				8DA591FC27E96DAF00CC739C /* Extension */,
+				D0DB558427E86F13002F8330 /* View */,
 				8D0E7C8827E824F800DC267C /* SupportingFiles */,
 				D0EB3F4E27E81CE700983F5E /* Info.plist */,
-				D0DB558227E86D58002F8330 /* UIColor+Extension.swift */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
