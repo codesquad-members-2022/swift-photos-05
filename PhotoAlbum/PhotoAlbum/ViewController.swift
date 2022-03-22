@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     var allPhotos: PHFetchResult<PHAsset>? // 가져올 asset
-    let imageManager = PHCachingImageManager()
+    let cacheManager = PHCachingImageManager()
+    let imageManger = PHImageManager()
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -47,7 +49,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         cell.representedIdentifier = asset?.localIdentifier
         
         // 이미지 불러오기
-        imageManager.requestImage(for: asset!, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFill, options: nil, resultHandler: {
+        imageManger.requestImage(for: asset!, targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFill, options: nil, resultHandler: {
             // 이미지 불러오기 성공
             // 이전에 주입한 cell의 identifier와 asset의 identifier가 같은 경우, 이미지 넣기
             image, _ in if cell.representedIdentifier == asset?.localIdentifier {
