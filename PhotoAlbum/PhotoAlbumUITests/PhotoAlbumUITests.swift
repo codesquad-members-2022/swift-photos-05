@@ -1,13 +1,13 @@
 //
-//  PhotosUITests.swift
-//  PhotosUITests
+//  PhotoAlbumUITests.swift
+//  PhotoAlbumUITests
 //
 //  Created by 박진섭 on 2022/03/22.
 //
 
 import XCTest
 
-class PhotosUITests: XCTestCase {
+class PhotoAlbumUITests: XCTestCase {
     
     let app = XCUIApplication()
     
@@ -23,8 +23,8 @@ class PhotosUITests: XCTestCase {
     }
 
     func testNavigationTitleIsValidate() throws {
-        //check navigation bar title
-        XCTAssertTrue(app.navigationBars.staticTexts["Photos"].exists)
+        // check navigation bar title
+        XCTAssertTrue(app.navigationBars.staticTexts["PhotoAlbum"].exists)
     }
 
 }

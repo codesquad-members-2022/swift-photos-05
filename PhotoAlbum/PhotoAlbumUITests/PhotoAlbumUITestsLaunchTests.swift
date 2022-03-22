@@ -1,13 +1,13 @@
 //
-//  PhotosUITestsLaunchTests.swift
-//  PhotosUITests
+//  PhotoAlbumUITestsLaunchTests.swift
+//  PhotoAlbumUITests
 //
 //  Created by 박진섭 on 2022/03/22.
 //
 
 import XCTest
 
-class PhotosUITestsLaunchTests: XCTestCase {
+class PhotoAlbumUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
