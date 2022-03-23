@@ -18,6 +18,13 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.allPhotos = PHAsset.fetchAssets(with: nil)
+        
+        switch PHPhotoLibrary.authorizationStatus() {
+            case .authorized:
+                PHPhotoLibrary.shared().register(self)
+            default:
+                PHPhotoLibrary.shared().register(self)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,5 +76,16 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let length = 100
         return CGSize(width: length, height: length)
+    }
+}
+
+
+extension ViewController: PHPhotoLibraryChangeObserver {
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        self.allPhotos = PHAsset.fetchAssets(with: nil)
+        
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }
