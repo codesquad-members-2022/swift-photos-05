@@ -9,7 +9,7 @@ import UIKit
 
 final class ImageCollectionViewCell: UICollectionViewCell {
     var representedIdentifier: String?
-    
+    static let reuseIdentifier: String = "imageCell"
     @IBOutlet weak var imageView: UIImageView!
     
     required init?(coder: NSCoder) {
