@@ -25,6 +25,7 @@ final class ViewController: UIViewController {
             default:
                 PHPhotoLibrary.shared().register(self)
         }
+        fetch()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +39,30 @@ final class ViewController: UIViewController {
         
         configureCachingPhotos()
     }
+    
+    private func fetch() {
+        guard let path = Bundle.main.path(forResource: "doodle", ofType: "json") else {
+            print("Error: Can't find Path")
+            return
+        }
+        
+        guard let jsonString = try? String(contentsOfFile: path) else {
+            print("Error: Can't convert jsonString")
+            return
+        }
+        
+        let decoder = JSONDecoder()
+        let data = jsonString.data(using: .utf8)
+        
+        guard let data = data else {
+            print("Error: data is nil")
+            return
+        }
+        
+        let convertedData = try? decoder.decode([DoodleImage].self, from: data)
+        print(convertedData)
+    }
+    
     
     private func configureCachingPhotos() {
         let visibleCellCount = collectionView.visibleCells.count // 28

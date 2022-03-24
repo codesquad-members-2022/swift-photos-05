@@ -8,9 +8,9 @@
 import Foundation
 
 struct DoodleImage: Codable {
-    let doodle: [Doodle]
+    let doodleList: [Doodle]
     var doodleCount: Int {
-        return self.doodle.count
+        return self.doodleList.count
     }
     
     struct Doodle: Codable {
