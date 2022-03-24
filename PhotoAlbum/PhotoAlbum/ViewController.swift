@@ -41,26 +41,18 @@ final class ViewController: UIViewController {
     }
     
     private func fetch() {
-        guard let path = Bundle.main.path(forResource: "doodle", ofType: "json") else {
-            print("Error: Can't find Path")
-            return
-        }
+        guard let path = Bundle.main.path(forResource: "doodle", ofType: "json") else { return }
         
-        guard let jsonString = try? String(contentsOfFile: path) else {
-            print("Error: Can't convert jsonString")
-            return
-        }
+        guard let jsonString = try? String(contentsOfFile: path) else { return }
         
         let decoder = JSONDecoder()
         let data = jsonString.data(using: .utf8)
         
-        guard let data = data else {
-            print("Error: data is nil")
-            return
-        }
+        guard let data = data else { return }
         
-        let convertedData = try? decoder.decode([DoodleImage].self, from: data)
-        print(convertedData)
+        guard let myDoodles = try? decoder.decode([Doodle].self, from: data) else { return }
+        
+
     }
     
     
