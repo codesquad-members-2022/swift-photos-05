@@ -12,6 +12,7 @@
 		D078A1A727EC41EE00927941 /* doodle.json in Resources */ = {isa = PBXBuildFile; fileRef = D078A1A627EC41EE00927941 /* doodle.json */; };
 		D078A1AA27EC454500927941 /* DoodleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078A1A927EC454500927941 /* DoodleImage.swift */; };
 		D078A1B227ED672400927941 /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078A1B127ED672400927941 /* DoodleViewController.swift */; };
+		D078A1B527ED687200927941 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078A1B427ED687200927941 /* NavigationViewController.swift */; };
 		D0DB557C27E821B8002F8330 /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB557B27E821B8002F8330 /* PhotoAlbumTests.swift */; };
 		D0DB558627E86F42002F8330 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558527E86F42002F8330 /* ImageCollectionViewCell.swift */; };
 		D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4027E81CE600983F5E /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		D078A1A627EC41EE00927941 /* doodle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = doodle.json; path = SupportingFiles/doodle.json; sourceTree = "<group>"; };
 		D078A1A927EC454500927941 /* DoodleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleImage.swift; sourceTree = "<group>"; };
 		D078A1B127ED672400927941 /* DoodleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
+		D078A1B427ED687200927941 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		D0DB557927E821B8002F8330 /* PhotoAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DB557B27E821B8002F8330 /* PhotoAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumTests.swift; sourceTree = "<group>"; };
 		D0DB558527E86F42002F8330 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -112,6 +114,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D078A1B327ED685500927941 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB3F4427E81CE600983F5E /* ViewController.swift */,
+				D078A1B127ED672400927941 /* DoodleViewController.swift */,
+				D078A1B427ED687200927941 /* NavigationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D0DB557A27E821B8002F8330 /* PhotoAlbumTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,14 +163,13 @@
 		D0EB3F3F27E81CE600983F5E /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				D0EB3F4427E81CE600983F5E /* ViewController.swift */,
 				D0EB3F4627E81CE600983F5E /* Main.storyboard */,
 				D078A1A827EC452F00927941 /* Model */,
 				D0DB558427E86F13002F8330 /* View */,
 				8D0E7C8827E824F800DC267C /* SupportingFiles */,
 				D0EB3F4E27E81CE700983F5E /* Info.plist */,
 				D078A1A627EC41EE00927941 /* doodle.json */,
-				D078A1B127ED672400927941 /* DoodleViewController.swift */,
+				D078A1B327ED685500927941 /* Controller */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -317,6 +328,7 @@
 				D0DB558627E86F42002F8330 /* ImageCollectionViewCell.swift in Sources */,
 				D0EB3F4527E81CE600983F5E /* ViewController.swift in Sources */,
 				D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */,
+				D078A1B527ED687200927941 /* NavigationViewController.swift in Sources */,
 				D0EB3F4327E81CE600983F5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
