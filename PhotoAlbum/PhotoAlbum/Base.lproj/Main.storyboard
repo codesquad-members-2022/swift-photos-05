@@ -87,22 +87,8 @@
                     <view key="view" contentMode="scaleToFill" id="agg-Vi-yxb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoo-cB-H0g">
-                                <rect key="frame" x="333" y="64" width="61" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
-                                <connections>
-                                    <action selector="close:" destination="8Hf-7D-m7Y" eventType="touchUpInside" id="6qP-C1-OIR"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yq2-w9-Ulf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="yq2-w9-Ulf" firstAttribute="trailing" secondItem="Eoo-cB-H0g" secondAttribute="trailing" constant="20" id="9PX-tS-8np"/>
-                            <constraint firstItem="Eoo-cB-H0g" firstAttribute="top" secondItem="yq2-w9-Ulf" secondAttribute="top" constant="20" id="n2f-v1-DFY"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kei-F5-W4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
