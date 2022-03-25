@@ -8,13 +8,9 @@
 import UIKit
 
 class DoodleViewController: UIViewController {
-
-    @IBAction func close(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .darkGray
     }
 }
