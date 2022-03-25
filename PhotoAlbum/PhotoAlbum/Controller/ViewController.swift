@@ -14,6 +14,16 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBAction func add(_ sender: UIBarButtonItem) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "DoodleVC") as? DoodleViewController else {
+            return
+        }
+        
+        self.navigationController?.modalTransitionStyle = .coverVertical
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
