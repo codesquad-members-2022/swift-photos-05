@@ -20,10 +20,10 @@ final class ViewController: UIViewController {
         self.allPhotos = PHAsset.fetchAssets(with: nil)
         
         switch PHPhotoLibrary.authorizationStatus() {
-            case .authorized:
-                PHPhotoLibrary.shared().register(self)
-            default:
-                PHPhotoLibrary.shared().register(self)
+        case .authorized:
+            PHPhotoLibrary.shared().register(self)
+        default:
+            PHPhotoLibrary.shared().register(self)
         }
         
         fetch()
@@ -43,14 +43,14 @@ final class ViewController: UIViewController {
     
     private func fetch() {
         guard let path = Bundle.main.path(forResource: "doodle", ofType: "json") else { return }
-
+        
         guard let jsonString = try? String(contentsOfFile: path) else { return }
-
+        
         let decoder = JSONDecoder()
         let data = jsonString.data(using: .utf8)
-
+        
         guard let data = data else { return }
-
+        
         guard let myDoodles = try? decoder.decode([Doodle].self, from: data) else { return }
     }
     
@@ -88,17 +88,15 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     
     private func inputCellImageWithPHAsset(cell:ImageCollectionViewCell,at indexPath:IndexPath) {
         if let asset = self.allPhotos?.object(at: indexPath.item) {
-        
-        cell.representedIdentifier = asset.localIdentifier
-        
-        imageManager.requestImage(for: asset, targetSize: cell.frame.size, contentMode: .default, options: nil, resultHandler: {
-            image, _ in if cell.representedIdentifier == asset.localIdentifier {
-                cell.imageView.image = image
-                cell.imageView.contentMode = .scaleToFill
-                
-                    }
+            
+            cell.representedIdentifier = asset.localIdentifier
+            
+            imageManager.requestImage(for: asset, targetSize: cell.frame.size, contentMode: .default, options: nil, resultHandler: {
+                image, _ in if cell.representedIdentifier == asset.localIdentifier {
+                    cell.imageView.image = image
+                    cell.imageView.contentMode = .scaleToFill
                 }
-            )
+            })
         }
     }
 }
@@ -110,7 +108,7 @@ extension ViewController: PHPhotoLibraryChangeObserver {
             if let changes = changeInstance.changeDetails(for: allPhotos) {
                 self.allPhotos = changes.fetchResultAfterChanges
                 collectionView.performBatchUpdates({
-
+                    
                     if let removed = changes.removedIndexes, removed.count > 0 {
                         collectionView.deleteItems(at: removed.map { IndexPath(item: $0, section:0) })
                     }

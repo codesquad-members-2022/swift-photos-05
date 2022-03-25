@@ -11,6 +11,7 @@
 		D00A520D27E98D1500089C7D /* PhotoAlbumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA591F527E9685000CC739C /* PhotoAlbumUITestsLaunchTests.swift */; };
 		D078A1A727EC41EE00927941 /* doodle.json in Resources */ = {isa = PBXBuildFile; fileRef = D078A1A627EC41EE00927941 /* doodle.json */; };
 		D078A1AA27EC454500927941 /* DoodleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078A1A927EC454500927941 /* DoodleImage.swift */; };
+		D078A1B227ED672400927941 /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078A1B127ED672400927941 /* DoodleViewController.swift */; };
 		D0DB557C27E821B8002F8330 /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB557B27E821B8002F8330 /* PhotoAlbumTests.swift */; };
 		D0DB558627E86F42002F8330 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DB558527E86F42002F8330 /* ImageCollectionViewCell.swift */; };
 		D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB3F4027E81CE600983F5E /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		8DA591F527E9685000CC739C /* PhotoAlbumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D078A1A627EC41EE00927941 /* doodle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = doodle.json; path = SupportingFiles/doodle.json; sourceTree = "<group>"; };
 		D078A1A927EC454500927941 /* DoodleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleImage.swift; sourceTree = "<group>"; };
+		D078A1B127ED672400927941 /* DoodleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
 		D0DB557927E821B8002F8330 /* PhotoAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DB557B27E821B8002F8330 /* PhotoAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumTests.swift; sourceTree = "<group>"; };
 		D0DB558527E86F42002F8330 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				8D0E7C8827E824F800DC267C /* SupportingFiles */,
 				D0EB3F4E27E81CE700983F5E /* Info.plist */,
 				D078A1A627EC41EE00927941 /* doodle.json */,
+				D078A1B127ED672400927941 /* DoodleViewController.swift */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D078A1AA27EC454500927941 /* DoodleImage.swift in Sources */,
+				D078A1B227ED672400927941 /* DoodleViewController.swift in Sources */,
 				D0DB558627E86F42002F8330 /* ImageCollectionViewCell.swift in Sources */,
 				D0EB3F4527E81CE600983F5E /* ViewController.swift in Sources */,
 				D0EB3F4127E81CE600983F5E /* AppDelegate.swift in Sources */,
@@ -475,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -530,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -555,7 +559,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +588,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
